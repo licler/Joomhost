@@ -89,6 +89,97 @@
     }
 }
 
-
-
 /* end top */
+
+/* start price */
+@media (max-width: 1420px) {
+    .price__items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .price__item {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 820px) {
+    .price__desc {
+        width: 350px;
+        margin-bottom: 100px;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .price {
+        padding: 150px 50px;
+    }
+}
+@media (max-width: 520px) {
+    .price__item {
+        width: 300px;
+        padding: 0 20px 60px;
+    }
+    .price__desc {
+        width: 300px;
+    }
+}
+@media (max-width: 450px) {
+    .price__item {
+        width: 250px;
+        padding: 0 20px 60px;
+    }
+    .price-item__number {
+        width: 200px;
+        left: 25px;
+        font-size: 26px;
+    }
+    .price {
+        padding: 150px 20px;
+    }
+    .price__desc {
+        width: 250px;
+    }
+    
+}
+@media (max-width: 330px) {
+    .price-item__number {
+        width: 180px;
+    }
+}
+
+/* end price */
+
+/* start reviews */
+@media (max-width: 945px) {
+    .reviews-box {
+        width: 500px;
+        justify-content: center;
+    }
+}
+@media (max-width: 545px) {
+    .reviews-box {
+        display: block;
+        width: 330px;
+    }
+    .reviews-box__images {
+       width: 330px; 
+    }
+    .reviews-slider {
+        margin-top: 100px;
+    }
+}
+@media (max-width: 370px) {
+    .reviews-box {
+        width: 250px;
+    }
+    .reviews-box__images {
+       width: 250px; 
+    }
+    .reviews-box__content {
+        width: 250px;
+        padding: 0px 15px;
+    }
+}
+
+
+
+/* end reviews */
