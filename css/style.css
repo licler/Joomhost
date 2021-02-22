@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
 header {
     border-top: 1px solid #3a83e5;
     background-color: #fff;
@@ -120,7 +126,7 @@ a {
     transform: translateY(-50%);
 }
 
-.top-info__img {}
+
 
 .top-info__btn {
     border: 3px solid #fff;
@@ -507,4 +513,3 @@ a {
     padding-right: 40px;
 }
 
-.clients__item+.clients__item {}
