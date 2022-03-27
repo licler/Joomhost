@@ -183,9 +183,9 @@
     }
 }
 
-
-
 /* end reviews */
+
+
 
 /* start clients */
 @media (max-width: 1150px) {
@@ -218,6 +218,9 @@
 
 /* start header */
 @media (max-width: 980px) {
+    body._lock {
+        overflow: hidden; /*  заблокировать прокрутку сайта при открытом меню*/
+     } 
     .menu__big-btn {
         width: 30px;
         display: block;
@@ -228,8 +231,63 @@
         background-color: #000;
         height: 3px;
         margin-bottom: 4px;
+    } 
+     .menu__big-btn{
+        z-index: 5;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+    } 
+    .menu__big-btn span, 
+    .menu__big-btn::before,
+    .menu__big-btn::after {
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: #000;
     }
-    .menu-list {
+    .menu__big-btn::before,
+    .menu__big-btn::after {
+        content: "";
+    }
+
+    .menu__big-btn::before {
+        top: 0;
+    }
+
+    .menu__big-btn::after {
+        bottom: 0;
+
+    }
+
+    .menu__big-btn span {
+        top: 50%;
+        transform: scale(1) translate(0, -50%);
+    }
+
+
+    .menu-list li + li {
+        margin-left: 0;
+    }
+
+     /* start изменим кнопку бургера */
+    /* .menu__big-btn.active span{
+        transform: scale(0) translate(0, -50%);
+    }
+    .menu__big-btn.active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0, -50%);
+    }
+    .menu__big-btn.active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0, -50%);
+    }  */
+    /* ---end изменим кнопку бургера-- */
+    .menu-list { 
         display: none;
         width: 300px;
         position: absolute;
@@ -238,7 +296,7 @@
         text-align: center;
         top: 87px;
         z-index: 30;
-        border-radius: 10px;
+        box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     }
     li {
         display: block;
@@ -252,13 +310,8 @@
         border: none;
     }
 }
-/* @media (min-width: 981px) {
-    .menu-list {
-        display: block !important;
-
-    }
-
-} */
 
 
 /* end header */
+
+
