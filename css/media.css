@@ -275,7 +275,7 @@
     }
 
      /* start изменим кнопку бургера */
-    /* .menu__big-btn.active span{
+    .menu__big-btn.active span{
         transform: scale(0) translate(0, -50%);
     }
     .menu__big-btn.active::before {
@@ -285,7 +285,7 @@
     .menu__big-btn.active::after {
         bottom: 50%;
         transform: rotate(45deg) translate(0, -50%);
-    }  */
+    } 
     /* ---end изменим кнопку бургера-- */
     .menu-list { 
         display: none;
